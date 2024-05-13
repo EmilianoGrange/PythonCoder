@@ -49,9 +49,13 @@ def menu():
 menu()
 """
 
-from paquete.modulo import Cliente
+import sys
 
-cliente1 = Cliente("Juan", "asjdjas@hjotmail.com", 1234, "otro")
+from paquete.clientes import Cliente
+
+print(sys.argv) #lista de argumentos al ejecutar el script; 0 es el propio script, a partir de 1 los que ingresemos
+
+cliente1 = Cliente("Juan", "asjdjas@hjotmail.com", 1234, "12345678")
 
 print(cliente1)
 

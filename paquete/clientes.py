@@ -4,11 +4,11 @@ class Cliente:
     # categoria = "cliente premium"
 
     #Constructor
-    def __init__(self, nombre, email, password, otro):
+    def __init__(self, nombre, email, password, dni):
         self.nombre = nombre
         self.email = email
         self.password = password
-        self.otro = otro
+        self.dni = dni
         self.carro = []
     
     def comprar(self, articulo):
